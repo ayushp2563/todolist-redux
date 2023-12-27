@@ -44,12 +44,15 @@ const Todo = () => {
                   height: "auto",
                   borderRadius: "5px",
                   color: "black",
+                  display: "flex",
+                  justifyContent: "space-between",
                 }}
               >
                 {elem.data}
                 <button
                   className="btn btn-primary"
                   onClick={() => dispatch(deleteTodo(elem.id))}
+                  style={{ marginLeft: "auto" }}
                 >
                   Delete
                 </button>
